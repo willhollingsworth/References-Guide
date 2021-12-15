@@ -1,2 +1,2 @@
 # References Guide
-A collection of common coding examples for later reference 
+A collection of common coding examples
