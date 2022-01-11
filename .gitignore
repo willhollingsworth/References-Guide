@@ -1,1 +1,3 @@
 JS/hello.txt
+JS/node_modules/*
+JS/package-lock.json
