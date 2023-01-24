@@ -65,10 +65,13 @@ def print_midi_devices():
 
 
 print_midi_devices()
-# in_port, out_port = define_in_out_midi_ports('MIDI Mix')
-in_port, out_port = define_in_out_midi_ports('Launchpad')
+in_port, out_port = define_in_out_midi_ports('MIDI Mix')
+out_port.send(mido.Message('note_on', channel=0, note=6, velocity=0))
+# in_port, out_port = define_in_out_midi_ports('Launchpad')
+# in_port, out_port = define_in_out_midi_ports(
+#     'function')  # android device in usb midi mode
 # scroll_lights()
 
-blink_lights(channel_start=0, channel_limit=1,
-             velocity_limit=127, msgs=['note_on'], note_limit=90)  # good test for the launchpad mk2
-# monitor_midi()
+# blink_lights(channel_start=0, channel_limit=1,
+#              velocity_limit=127, msgs=['note_on'], note_limit=90)  # good test for the launchpad mk2
+monitor_midi()
