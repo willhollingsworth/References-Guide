@@ -34,7 +34,7 @@ def show_menu():
 
 def option_1():
     option_1 = '''
-    welcome to option 1
+    welcome to option A
     '''
     print(option_1)
     wait_for_key()
@@ -42,7 +42,7 @@ def option_1():
 
 def option_2():
     option_2 = '''
-    welcome to option 2
+    welcome to option B
     '''
     print(option_2)
     wait_for_key()
