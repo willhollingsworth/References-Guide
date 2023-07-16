@@ -1,5 +1,7 @@
 import os
 
+# uses windows specific commands, untested on nix or mac
+
 def clear_screen():
     os.system('cls')
 
