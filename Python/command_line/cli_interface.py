@@ -42,7 +42,7 @@ def option_1():
 
 def option_2():
     option_2 = '''
-    welcome to option 1
+    welcome to option 2
     '''
     print(option_2)
     wait_for_key()
