@@ -5,8 +5,11 @@ def clear_screen():
 
 def invalid_choice():
     print('invalid choice, please re-pick')
-    input()
+    wait_for_key()
     show_menu()
+
+def wait_for_key():
+    os.system('pause')
 
 def show_menu():
     clear_screen()
@@ -30,19 +33,17 @@ def show_menu():
 def option_1():
     option_1 = '''
     welcome to option 1
-    press any key to return to main menu
     '''
     print(option_1)
-    input()
+    wait_for_key()
     show_menu()
 
 def option_2():
     option_2 = '''
     welcome to option 1
-    press any key to return to main menu
     '''
     print(option_2)
-    input()
+    wait_for_key()
     show_menu()
 
 if __name__ == '__main__':
